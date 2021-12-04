@@ -21,5 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home ,name='home'),
     path('inscription',inscription, name='inscription'),
-    path('room',room,name='room')
 ]
