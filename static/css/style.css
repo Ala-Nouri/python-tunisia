@@ -179,8 +179,10 @@ label{
 button{
 	margin-left: 300px;
 	width:auto;
-	border-radius: 50%;
-	background-color: crimson;
+	border-radius: 50px;
+	background-color: rgba(206, 121, 138, 0.637);
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 
