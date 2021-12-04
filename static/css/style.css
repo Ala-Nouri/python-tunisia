@@ -166,6 +166,7 @@ form{
 	grid-row-gap: 10px;
 	margin-left: 200px;
 	width: 100%;
+	margin-top: 100px;
 }
 form ul{
 	list-style: none;
@@ -197,6 +198,7 @@ label{
 	align-items: center;
 	justify-content: center;
 	transition: .4s;
+	
   }
   
   button:hover {
