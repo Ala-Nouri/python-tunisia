@@ -28,15 +28,15 @@
 	<section class="main">
 		<video src="{% static 'images/py.mp4'%}" autoplay loop muted></video>
 		<img src="{% static 'images/mask.jpg'%}" class="mask">
-		<h2>Python-TN</h2>
+		<h2 id ='timer'></h2>
 		<p class="copyright">© python development department - 2021	</p>
 		<a href="https://www.facebook.com/IIT-Python-Tunisia-104596848690428"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
 	</section>
 	
 
 	<ul class="navigation">
-		<li><a href="{% url 'inscription' %}">Inscription</a></li>
-		<li><a href="">About</a></li>
+		<li><a href={% url 'inscription' %}>Inscription</a></li>
+		<li><a href={% url 'about'%}>About</a></li>
 		<li><a href="">Sponsors</a></li>
 		
 	</ul>

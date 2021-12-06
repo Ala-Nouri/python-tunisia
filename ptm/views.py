@@ -17,3 +17,6 @@ def inscription(request):
     context  ={'form':form}
     return render(request,'inscription.html',context)
 
+def about(request):
+    return render(request,'about.html')
+

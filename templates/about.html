@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inscription</title>
+	<title>Python Tunisia</title>
 	<link rel="shortcut icon" href="{% static 'images/py.png'%}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -26,38 +26,48 @@
 		</div>
 	</header>
 	<section class="main">
-		<form method='POST'>
-			{% csrf_token %} 
-			<label> first name</label>
-			{{form.f_name}}
-			<label> last name</label>
-			{{form.l_name}}
-			<label> email</label>
-			{{form.email}}
-			<label> telephone</label>
-			{{form.tel}}
-			<label> date de naissance</label>
-			{{form.date}}
-			<label> gender</label>
-			{{form.gender}}
-			<div></div>
-			<button class="selectnone">
-				<span>Submit me</span>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-				  <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
-				</svg>
-			  </button>
-		</form>
+		<div class="container">
+			<div class="card" id="c1">
+				<div class="content">
+					<h2>IIT PYTHON-TN</h2>
+					<h3>about us</h3>
+					<p>IIT PYTHON TUNISIA est un club à but non lucratif,fondé en Avril 2019 au seinde l’université par un groupe des étudiants,Il s’avére un club impactant pourcette année universitaire actuelle2021/2022 plus de 110 membres.</p>
+				</div>
+			</div>
+			<div class="card" id="c2">
+				<div class="content">
+					<h2>IIT PYTHON-TN</h2>
+					<h3>our vision</h3>
+					<p>Dynamiser la vie estudiantine en assurant le développement personnel des étudiants dansle but de les préparer à une meilleure insertion professionnelle.</p>
+				</div>
+			</div>
+		</div>
 		<p class="copyright">© python development department - 2021	</p>
 		<a href="https://www.facebook.com/IIT-Python-Tunisia-104596848690428"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
 	</section>
+	
+
 	<ul class="navigation">
-		<li><a href={% url 'home' %}>Home</a></li>
-		<li><a href={% url 'about'%}>About</a></li>
+		<li><a href={% url 'home'%}>Home</a></li>
+		<li><a href="{% url 'inscription' %}">Inscription</a></li>
 		<li><a href="">Sponsors</a></li>
 		
 	</ul>
-
 </body>
 	<script type="text/javascript" src="{% static 'js/javascript.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/vanilla-tilt.js'%}"></script>
+	<script type="text/javascript">
+	VanillaTilt.init(document.getElementById("c1"), {
+		max: 25,
+		speed: 400,
+		glare:true,
+		"max-glare":1,
+	});
+	VanillaTilt.init(document.getElementById("c2"), {
+		max: 25,
+		speed: 400,
+		glare:true,
+		"max-glare":1,
+	});
+    </script>
 </html>
