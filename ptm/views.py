@@ -13,7 +13,6 @@ def inscription(request):
         if form.is_valid():
              obj=form.save(commit=False)
              obj.save()
-             return render(request,'home.html')
     context  ={'form':form}
     return render(request,'inscription.html',context)
 
