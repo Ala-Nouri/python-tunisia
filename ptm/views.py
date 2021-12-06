@@ -19,3 +19,6 @@ def inscription(request):
 def about(request):
     return render(request,'about.html')
 
+def sponsors(request):
+    return render(request,'sponsors.html')
+

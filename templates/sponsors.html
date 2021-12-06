@@ -25,22 +25,34 @@
 			</div>
 		</div>
 	</header>
-	<section class="main">
-		<video src="{% static 'images/py.mp4'%}" autoplay loop muted></video>
-		<img src="{% static 'images/mask.jpg'%}" class="mask">
-		<h2 id ='timer'></h2>
+	<section class="main1"><div class="Sponsors">
+        <div class="circle"></div>
+        <img src="{% static 'images/iit.png' %}">
+        <div class="cont">
+            <h2>IIT</h2>
+            <p>L'Institut International de Technologie (IIT) est un organisme d’enseignement supérieur privé agréé par le Ministère de l’Enseignement Supérieur et de la Recherche Scientifique. Il a été inauguré le 23 Août 2012.Cet établissement est accrédité par l'organisme ASIIN pour le Génie Informatique (EURO-INF) et le Génie Industriel (EUR-ACE).</p>
+        </div>
+    </div>
+    <div class="Sponsors">
+        <div class="circle"></div>
+        <img src="{% static 'images/fo.png' %}">
+        <div class="cont">
+            <h2>fogits</h2>
+            <p>Make our expertise and know-how available in open source solutions, for the success of our partners’ projects.
+                We place our customers at the heart of our strategy by focusing on excellence in terms of quality of execution, quality of service, communication, deadlines, fees and commitment to guarantee their total satisfaction.</p>
+        </div>
+    </div>
 		<p class="copyright">© python development department - 2021	</p>
 		<a href="https://www.facebook.com/IIT-Python-Tunisia-104596848690428"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
 	</section>
 	
 
 	<ul class="navigation">
+		<li><a href={% url 'home'%}>home</a></li>
 		<li><a href={% url 'inscription' %}>Inscription</a></li>
 		<li><a href={% url 'about'%}>About</a></li>
-		<li><a href={% url 'sponsors'%}>Sponsors</a></li>
 		
 	</ul>
 </body>
 	<script type="text/javascript" src="{% static 'js/javascript.js'%}"></script>
-	<script type="text/javascript" src="{% static 'js/counter.js'%}"></script>
 </html>

@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ptm.views import home, inscription, about
+from ptm.views import home, inscription, about,sponsors
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home ,name='home'),
     path('inscription',inscription, name='inscription'),
-    path('about',about,name='about')
+    path('about',about,name='about'),
+    path('sponsors',sponsors,name='sponsors'),
 ]

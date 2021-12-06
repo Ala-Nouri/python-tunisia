@@ -79,7 +79,7 @@ header  img:nth-child(2){
 .btn.active ion-icon:nth-child(1){
 	display: none;
 }
-.main{
+.main,.main1{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
@@ -140,6 +140,19 @@ header  img:nth-child(2){
 	border-left: 1px solid rgba(255,255,255,0.5);
 	backdrop-filter:blur(5px); 
 }
+.container .card h3{
+	position: absolute;
+	left: 70px;
+	top: 30px;
+	font-size: 1.8em;
+	color: var(--black);
+	text-align: center;
+	transform: translateY(150px);
+	transition: 0.5s;
+}
+.container .card:hover h3{
+	transform: translateY(0px);
+}
 .container .card .content {
 	padding: 20px;
 	text-align: center;
@@ -163,10 +176,9 @@ header  img:nth-child(2){
 .container .card .content h3{
 	font-size: 1.8em;
 	color: var(--black);
-	z-index: 1;
 }
 .container .card .content p{
-	padding-top: 20px;
+	padding-top: 60px;
 	font-size: 1em;
 	color: var(--black);
 	font-weight: 300;
@@ -236,6 +248,12 @@ input{
 form ul{
 	list-style: none;
 }
+form ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 40px;
+	padding-right: 40px;
+}
 
 label{
 	font-size: 1.25vw;
@@ -301,6 +319,80 @@ label{
   button:focus svg {
 	animation: check 500ms 2300ms forwards;
   }
+
+  .Sponsors{
+	position: relative;
+	margin-right: 100px;
+	width: 400px;
+	height: 200px;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.Sponsors .circle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.Sponsors .circle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	clip-path: circle(100px at center);
+	transition: 0.5s;
+}
+.Sponsors:hover .circle::before{
+	background: var(--card);
+	clip-path: circle(400px at center);
+}
+.Sponsors img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 150px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.Sponsors:hover img{
+	left: 100%;
+	height: 150px;
+	width: 250px;
+}
+.Sponsors .cont h2{
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: var(--black);
+	line-height: 1em;
+	font-size: 2em;
+}
+.Sponsors .cont p{
+	font-size: 0.65em;
+	color: var(--black);
+}
+.Sponsors .cont{
+	position: relative;
+	width: 80%;
+	left: 20%;
+	padding: 20px 20px 20px 50px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+
+}
+.Sponsors:hover .cont{
+	left: -40px;
+	opacity: 1;
+	visibility: visible;
+}
   
   @keyframes spin {
 	80% {
@@ -336,6 +428,9 @@ label{
 		bottom: 30px;
 		font-size: 0.8em;
 	}
+	.mask{
+		height: 300px;
+	}
 	.social{
 		right: 20px;
 		bottom: 30px;
@@ -343,12 +438,33 @@ label{
 	form{
 		margin-left: 50px;
 	}
+	form ul li {
+		padding-left: 10px;
+	}
 	label{
 		font-size: 0.7em;
 	}
+	
 	.container{
 		margin-top: 150px;
 		margin-bottom: 50px;
+	}
+	.container .card h3{
+		position: absolute;
+		left: 70px;
+		top: 30px;
+		font-size: 1.8em;
+		color: var(--black);
+		text-align: center;
+		transform: translateY(0px);
+		transition: 0.5s;
+	}
+	.container .card .content {
+		padding: 20px;
+		text-align: center;
+		transform: translateY(0px);
+		opacity: 1;
+		transition: 0.5s;
 	}
 	button{
 		margin-left: 15px;
@@ -359,4 +475,28 @@ label{
 		width: 120px;
 		box-shadow: 0px 10px 10px var(--c2);
 	  }
+	.main1{
+		flex-direction: column;
+	}
+	.Sponsors{
+		width: auto;
+		max-width: 350px;
+		align-items: flex-start;
+		margin: 10px;
+		flex-wrap: nowrap;
+	}
+	.Sponsors:hover{
+		height: 320px;
+	}
+	.Sponsors:hover:nth-child(1){
+		margin-top: 150px;
+	}
+	.Sponsors .cont{
+		width: 100%;
+	}
+	.Sponsors:hover img{
+		top: 80%;
+		left: 50%;
+		height: 120px;
+	}
 }
