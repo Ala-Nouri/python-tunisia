@@ -364,7 +364,7 @@ label{
 	width: 100%;
 }
 .timeline {
-   width: 80%;
+   width: 100%;
    position: relative;
    min-height: 150px;
 }
@@ -411,7 +411,6 @@ label{
 }
 
 .content{
-   position: relative;
    color: var(--black);
    width: calc(70%-2rem);
 
@@ -533,5 +532,11 @@ label{
 		top: 80%;
 		left: 50%;
 		height: 120px;
+	}
+	.section{
+		min-height: 150px;
+	}
+	.content{
+		width: calc(60%-2rem);
 	}
 }
