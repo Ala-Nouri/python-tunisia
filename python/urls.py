@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ptm.views import home, inscription, about,sponsors
+from ptm.views import home, inscription, about,sponsors,program
 
 
 urlpatterns = [
@@ -24,4 +24,5 @@ urlpatterns = [
     path('inscription',inscription, name='inscription'),
     path('about',about,name='about'),
     path('sponsors',sponsors,name='sponsors'),
+    path('program',program,name='program'),
 ]

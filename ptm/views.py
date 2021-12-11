@@ -22,3 +22,6 @@ def about(request):
 def sponsors(request):
     return render(request,'sponsors.html')
 
+def program(request):
+    return render(request,'program.html')
+
