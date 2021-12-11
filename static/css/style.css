@@ -260,16 +260,7 @@ label{
 	color: var(--black);	
 }
 
-.selectnone {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: transparent;
-  }
-  
+
   button {
 	margin-left: 200px;
 	width: 150px;
@@ -284,41 +275,14 @@ label{
 	transition: .4s;
 	
   }
+ 
   
   button:hover {
 	width: 170px;
 	box-shadow: 0px 10px 10px var(--c2);
   }
   
-  span, svg {
-	position: absolute;
-	color: red;
-	fill: transparent;
-	transition: .4s;
-  }
-  
-  button:hover span {
-	transition: .4s;
-	font-size: 16px;
-  }
-  
-  button:focus {
-	outline: none;
-	box-shadow: none;
-	border: 2px solid transparent;
-	width: 50px;
-	border-left: 2px solid red;
-	border-bottom: 2px solid red;
-	animation: spin 2s 500ms forwards;
-  }
-  
-  button:focus span {
-	color: transparent;
-  }
-  
-  button:focus svg {
-	animation: check 500ms 2300ms forwards;
-  }
+
 
   .Sponsors{
 	position: relative;
@@ -428,9 +392,7 @@ label{
 		bottom: 30px;
 		font-size: 0.8em;
 	}
-	.mask{
-		height: 300px;
-	}
+	
 	.social{
 		right: 20px;
 		bottom: 30px;
