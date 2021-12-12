@@ -413,6 +413,7 @@ label{
 .content{
    color: var(--black);
    width: calc(70%-2rem);
+   margin: auto 100px auto 100px;
 
 }
 .content h1{
@@ -532,6 +533,9 @@ label{
 		top: 80%;
 		left: 50%;
 		height: 120px;
+	}
+	.container1{
+		margin: 200px auto 100px auto;
 	}
 	.section{
 		min-height: 150px;
