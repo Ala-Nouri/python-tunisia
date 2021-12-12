@@ -539,5 +539,6 @@ label{
 	}
 	.container1 .content{
 		width: calc(60%-2rem);
+		margin: auto auto auto 100px;
 	}
 }
