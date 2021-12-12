@@ -268,10 +268,7 @@ label{
 	background: none;
 	border: 2px solid red;
 	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	color: var(--black);
 	transition: .4s;
 	
   }
