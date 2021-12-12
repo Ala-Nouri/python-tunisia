@@ -410,13 +410,13 @@ label{
    transform: translateX(-50%);
 }
 
-.content{
+.container1 .content{
    color: var(--black);
    width: calc(70%-2rem);
    margin: auto 100px auto 100px;
 
 }
-.content h1{
+.container1 .content h1{
    margin: 10px;
    
 }
@@ -540,7 +540,7 @@ label{
 	.section{
 		min-height: 150px;
 	}
-	.content{
+	.container1 .content{
 		width: calc(60%-2rem);
 	}
 }
