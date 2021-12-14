@@ -417,9 +417,14 @@ label{
    margin: 10px;
    
 }
+.container1 .content p{
+	margin: 15px;
+	
+ }
 
 
 .show-me{
+   max-width: calc(70%-2rem); ;
    transform: translateX(0%);
    opacity: 1;
 }
@@ -427,29 +432,7 @@ label{
    transform: none;
    opacity: 1;
 }
-  
-  @keyframes spin {
-	80% {
-	  border: 2px solid transparent;
-	  border-left: 2px solid red;
-	}
-	100% {
-	  transform: rotate(1080deg);
-	  border: 2px solid red;
-	}
-  }
-  
-  @keyframes check {
-	to {
-	  fill: red;
-	}
-  }
-  
-  @keyframes circle {
-	to {
-	  border: 2px solid red;
-	}
-  }
+
   
 
 
