@@ -410,7 +410,9 @@ label{
    left: calc(50% + 1px);
    transform: translateX(-50%);
 }
-
+.bead:nth-child(odd){
+	left:1px;
+}
 .container1 .content{
    color: var(--black);
    width: calc(70%-2rem);
