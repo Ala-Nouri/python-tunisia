@@ -395,7 +395,7 @@ label{
    transform: translateX(50%);
 
 }
-.section:last-child(1){
+.show-me:last-child(1){
 	margin-bottom: 300px;
  
  }
