@@ -414,8 +414,12 @@ label{
 .container1 .content{
    color: var(--black);
    width: calc(70%-2rem);
-   margin: auto 100px auto 100px;
+   margin: auto ;
+   float: left;
 
+}
+.container1 .content:nth-child(odd){
+	float: right;
 }
 .container1 .content h1{
    margin: 10px;
