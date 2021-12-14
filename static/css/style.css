@@ -395,8 +395,7 @@ label{
    transform: translateX(50%);
 
 }
-.section:last-child(){
-	flex-direction: row-reverse;
+.section:last-child(1){
 	margin-bottom: 300px;
  
  }
