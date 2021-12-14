@@ -410,7 +410,7 @@ label{
    transform: translateX(-50%);
 }
 .bead:nth-child(even){
-	left: calc(50% + 1px);
+	left:calc(50% + 1px);
 }
 .bead:nth-child(odd){
 	left:1px;
