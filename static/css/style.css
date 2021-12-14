@@ -391,7 +391,7 @@ label{
    min-height: 150px;
 }
 .section:nth-child(odd){
-   flex-direction: row-reverse;
+	margin-left: 50%;
    transform: translateX(50%);
 
 }
