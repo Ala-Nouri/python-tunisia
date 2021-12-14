@@ -358,7 +358,7 @@ label{
 .container1{
 	padding: 2rem;
 	margin: 200px auto auto auto;
-	width: 100%;
+	width: 75%;
 }
 .timeline {
    width: 100%;
@@ -414,13 +414,10 @@ label{
 .container1 .content{
    color: var(--black);
    width: calc(70%-2rem);
-   margin: auto ;
-   float: left;
+   
 
 }
-.container1 .content:nth-child(odd){
-	float: right;
-}
+
 .container1 .content h1{
    margin: 10px;
    
