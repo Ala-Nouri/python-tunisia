@@ -407,8 +407,10 @@ label{
    border-radius: 50%;
    background-color: var(--black);
    top: 20%;
-   left: calc(50% + 1px);
    transform: translateX(-50%);
+}
+.bead:nth-child(even){
+	left: calc(50% + 1px);
 }
 .bead:nth-child(odd){
 	left:1px;
