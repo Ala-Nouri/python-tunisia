@@ -368,7 +368,7 @@ label{
 .line {
    position: absolute;
    z-index: 2;
-   left: 20px;
+   left: -30px;
    width: 2px;
    top:0;
    bottom:0;
