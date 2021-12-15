@@ -390,11 +390,6 @@ label{
    align-items: center;
    min-height: 150px;
 }
-.section:nth-child(odd){
-	margin-left: 50%;
-   transform: translateX(50%);
-
-}
 .show-me:last-child(1){
 	margin-bottom: 300px;
  
@@ -407,14 +402,10 @@ label{
    border-radius: 50%;
    background-color: var(--black);
    top: 20%;
+   left:calc(50% + 1px);
    transform: translateX(-50%);
 }
-.bead:nth-child(even){
-	left:calc(50% + 1px);
-}
-.bead:nth-child(odd){
-	left:1px;
-}
+
 .container1 .content{
    color: var(--black);
    width: calc(70%-2rem);
